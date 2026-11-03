@@ -1,0 +1,19 @@
+{
+  "name": "3d-textbook-lesson",
+  "private": true,
+  "type": "module",
+  "description": "3D 课本：把一节课本做成能玩的 3D 立体书（three.js）",
+  "scripts": {
+    "preview": "node serve.mjs",
+    "shot": "node tools/shot.mjs",
+    "clip": "node tools/clip.mjs",
+    "build": "node tools/build.mjs"
+  },
+  "dependencies": {
+    "puppeteer-core": "^23.0.0",
+    "three": "0.170.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}

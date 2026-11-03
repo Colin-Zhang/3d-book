@@ -1,0 +1,26 @@
+@font-face { font-family: "WenKai"; src: url("../fonts/LXGWWenKai-Regular.subset.woff2") format("woff2"); font-display: block; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: #e7e1d6; }
+#stage { position: fixed; inset: 0; }
+#stage canvas { display: block; width: 100%; height: 100%; }
+#vignette { position: fixed; inset: 0; pointer-events: none; background: radial-gradient(ellipse at 52% 46%, rgba(0,0,0,0) 58%, rgba(60,48,30,0.16) 100%); }
+#bar {
+  position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%);
+  display: flex; align-items: center; gap: 10px; padding: 7px 14px;
+  font: 15px/1 "WenKai", "Noto Serif CJK SC", "Songti SC", serif; color: #3b3a36;
+  background: rgba(251, 249, 244, 0.93); border: 1px solid rgba(59, 58, 54, 0.12); border-radius: 999px;
+  box-shadow: 0 6px 22px rgba(60, 48, 30, 0.14); user-select: none; white-space: nowrap;
+}
+#bar button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; padding: 5px 8px; border-radius: 999px; }
+#bar button:hover { background: rgba(59, 58, 54, 0.07); }
+#bar .ico { font-size: 17px; padding: 4px 7px; }
+#bar .dots { display: flex; gap: 5px; }
+#bar .dots i { width: 6px; height: 6px; border-radius: 50%; background: rgba(59, 58, 54, 0.22); }
+#bar .dots i.on { width: 16px; border-radius: 3px; background: #3b3a36; }
+#bar .sep { width: 1px; height: 18px; background: rgba(59, 58, 54, 0.15); }
+#bar .title { font-size: 15px; letter-spacing: 0.5px; }
+#bar .grp { display: flex; align-items: center; gap: 2px; color: rgba(59, 58, 54, 0.7); }
+#bar .grp button { min-width: 26px; color: #3b3a36; }
+#bar .grp button.on { background: #3b3a36; color: #fbf9f4; }
+#bar .go { background: #f07a2a !important; color: #fff !important; padding: 6px 14px !important; }
+#bar .go:disabled { opacity: 0.45; cursor: default; }
+@media (max-width: 760px) { #bar { gap: 4px; padding: 6px 8px; font-size: 13px; } #bar .dots, #bar .title, #bar .sep { display: none; } }
