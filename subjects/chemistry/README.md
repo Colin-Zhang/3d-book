@@ -17,4 +17,4 @@
 
 ## 许可
 
-和整个 skill 一样用 MIT 许可证（见 `3d-textbook/LICENSE`）。
+和整个 skill 一样用 MIT 许可证（见仓库根目录的 `LICENSE`）。
